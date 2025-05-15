@@ -1,0 +1,41 @@
+nav {
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    position: sticky;
+    z-index: 1;
+    top: 0;
+    width: 100%;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    transition: background 0.5s ease;
+}
+
+nav:hover {
+    background: rgba(0, 0, 0, 0.9);
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    margin: 0;
+}
+
+li {
+    display: flex;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 22px;
+    transition: color 0.3s, transform 0.3s;
+    font-family: 'Poppins', sans-serif;
+}
+
+a:hover {
+    color: #FFD700;
+    transform: scale(1.1);
+}

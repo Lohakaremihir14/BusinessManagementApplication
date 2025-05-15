@@ -1,0 +1,73 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-image: url("admin.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    padding: 20px;
+    color: #2f3640;
+}
+
+a.back {
+    text-decoration: none;
+    background: #e84118;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+.tables {
+    width: 90%;
+    margin-top: 60px;
+}
+
+.tables h2 {
+    background-color: #273c75;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 40px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+table th, table td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: center;
+}
+
+table th {
+    background-color: #40739e;
+    color: white;
+}
+
+.btns {
+    display: inline-block;
+    margin-top: 10px;
+    background-color: #44bd32;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+a.edit {
+    color: #2980b9;
+    margin-right: 10px;
+    font-size: 18px;
+}
+
+a.delete {
+    color: #c23616;
+    font-size: 18px;
+}

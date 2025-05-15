@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Order Success</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+
+<style>
+    body {
+        background-color: navajowhite;
+        font-family: 'Poppins', cursive;
+        font-size: 18px;
+        margin: 0;
+        padding: 0;
+    }
+
+    .text {
+        position: relative;
+        top: 150px;
+        margin: auto;
+        width: 60%;
+        background: #fff8dc;
+        border-radius: 15px;
+        padding: 30px;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        text-align: center;
+    }
+
+    .text h4 {
+        color: green;
+        font-size: 28px;
+    }
+
+    .details {
+        margin-top: 20px;
+        text-align: left;
+        background-color: #f9f6f2;
+        padding: 20px;
+        border-radius: 10px;
+        border: 1px solid #ddd;
+    }
+
+    .details span {
+        font-weight: bold;
+        color: #333;
+    }
+
+    a {
+        position: fixed;
+        top: 20px;
+        left: 20px;
+        border: 1px solid black;
+        text-decoration: none;
+        background-color: darkgreen;
+        color: aliceblue;
+        font-family: sans-serif;
+        padding: 8px 15px;
+        border-radius: 8px;
+        font-weight: bold;
+    }
+
+    .amount {
+        font-size: 20px;
+        margin-top: 20px;
+        color: #e91e63;
+    }
+</style>
+
+<body>
+    <a th:href="@{/product/back}">Back</a>
+
+    <div class="text">
+        <h4>✅ Ordered Successfully!</h4>
+        <h3> Thank You , <span th:text="${name}"></span> !!</h3>
+
+        <div class="details">
+            <p>📦 <span>Product:</span> <span th:text="${product.pName}"></span></p>
+            <p>💰 <span>Price per KG:</span> ₹<span th:text="${product.pPrice}"></span></p>
+            <p>⚖️ <span>Quantity:</span> <span th:text="${order.oQuantity}"></span> KG</p>
+            <p class="amount">Total Paid: <span th:text="'₹ ' + ${amount} + '/-'"></span></p>
+            <p>📅 <span>Date:</span> <span th:text="${order.orderDate}"></span></p>
+        </div>
+    </div>
+
+</body>
+</html>

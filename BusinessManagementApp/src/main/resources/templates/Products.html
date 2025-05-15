@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>PRODUCTS</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" th:href="@{/css/Navigation.css}">
+    <link rel="stylesheet" th:href="@{/css/Products.css}">
+</head>
+<body>
+
+<!-- Navigation -->
+<nav th:replace="~{Navigation::navbar()}"></nav>
+
+<section>
+    <div class="p1" th:each="product, stat : ${products}">
+        <img th:src="@{'/images/' + ${imgList[stat.index % imgList.size()]}}" 
+             alt="Herbal Product"/>
+		<div>
+        <h4>Product Name: <span th:text="${product.pName}"></span></h4>
+        <h4>Product Price: ₹<span th:text="${product.pPrice}"></span></h4>
+        </div>
+        <a href="login" id="buy">Buy Now</a>
+    </div>
+</section>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        document.querySelectorAll("#buy").forEach(function(button) {
+            button.addEventListener("click", function(e) {
+                alert("Please Login as a User to buy Products");
+            });
+        });
+    });
+</script>
+
+</body>
+</html>

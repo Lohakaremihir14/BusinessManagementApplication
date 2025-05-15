@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8" />
+    <title>Login Page</title>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+    <!-- External CSS -->
+    <link rel="stylesheet" th:href="@{/css/login.css}">
+</head>
+
+<body>
+    <nav>
+        <a th:href="@{./}">Back to Services</a>
+    </nav>
+
+    <div class="LoginContainer">
+        <!-- Admin Login -->
+        <div class="admin">
+            <div class="content">
+                <strong>BUSINESS</strong>
+                <h2>Admin Login</h2>
+                <form th:action="@{/adminlogin}" th:object="${adminLogin}" method="Get">
+                    <label>Email:</label>
+                    <div class="inputGroup">
+                        <input type="text" th:field="*{email}" placeholder="Enter email..." class="form-control" />
+                        <i class="fas fa-envelope"></i>
+                    </div>
+
+                    <label>Password:</label>
+                    <div class="inputGroup">
+                        <input type="password" th:field="*{password}" placeholder="Enter password..." class="form-control" />
+                        <i class="fas fa-lock"></i>
+                    </div>
+
+ 
+					<small style="color: red;" th:text="${error}"></small><br />
+                    <button type="submit" class="loginButton">Log In</button>
+                </form>
+            </div>
+        </div>
+
+        <!-- User Login -->
+        <div class="user">
+            <div class="content">
+                <strong>WELCOME</strong>
+                <h2>User Login</h2>
+                <form th:action="@{/userlogin}" th:object="${userLogin}" method="Get" >
+                    <label>Email:</label>
+                    <div class="inputGroup">
+                        <input type="text" th:field="*{userEmail}" placeholder="Enter email..." class="form-control" />
+                        <i class="fas fa-envelope"></i>
+                    </div>
+
+                    <label>Password:</label>
+                    <div class="inputGroup">
+                        <input type="password" th:field="*{userPassword}" placeholder="Enter password..." class="form-control" />
+                        <i class="fas fa-lock"></i>
+                    </div>
+
+<!--                     <div class="error">
+                        <small th:errors="*{userEmail}"></small>
+                        <small th:errors="*{userPassword}"></small>
+                    </div> -->
+					<small style="color: red;" th:text="${error2}"></small><br />
+                    <button type="submit" class="loginButton">Log In</button>
+                    <p>Don't have an account? <a th:href="@{/Add_User}">Register Here</a></p>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

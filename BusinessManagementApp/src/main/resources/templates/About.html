@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>ABOUT</title>
+    <link rel="stylesheet" th:href="@{/css/About.css}">
+    <link rel="stylesheet" th:href="@{/css/Navigation.css}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+    <nav th:replace="~{Navigation::navbar()}"></nav>
+
+    <div class="container">
+        <div class="information">
+            <h3>Repacked & Packed By :</h3>
+            <h1>Mihir's Herbal Products</h1>
+            <h4>RSN : XXX/1, E Ward, Xyz Mil,</h4>
+            <h4>Hyderabad - XXXXXX, India.</h4>
+        </div>
+
+        <div class="icons">
+            <h3><i class="fa-brands fa-square-instagram"></i> abcdxyz</h3>
+            <h3><i class="fa-solid fa-phone"></i> +91-0909090909</h3>
+            <h3><i class="fa-solid fa-envelope"></i> xyz488@gmail.com</h3>
+        </div>
+    </div>
+
+    <footer style="text-align:center">
+        &copy; 2025 Business Management Project | Built with ❤️ and Java
+    </footer>
+</body>
+</html>

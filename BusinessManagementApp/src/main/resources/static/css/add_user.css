@@ -1,0 +1,82 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url("/Images/logo-white2.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: Arial, sans-serif;
+}
+
+* {
+    color: #c0c0c0;
+    font-weight: bold;
+}
+
+.addUser {
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 400px;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 128, 0, 0.7);
+    position: absolute;
+    left: 50%;
+    top: 50px;
+    transform: translateX(-50%);
+}
+
+h3 {
+    text-align: center;
+    color: #ff4d4d;
+    margin-bottom: 30px;
+}
+
+label {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+input {
+    display: block;
+    padding: 8px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    border-bottom: 2px solid darkgreen;
+    font-size: 15px;
+    width: 100%;
+    color: aqua;
+}
+
+button {
+    display: block;
+    margin: 30px auto 0;
+    padding: 10px 25px;
+    background-color: green;
+    color: #fff;
+    border: 1px solid black;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: darkgreen;
+}
+
+a {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    border: 1px solid darkslategray;
+    padding: 10px 20px;
+    background-color: darkslategray;
+    text-decoration: none;
+    color: white;
+    border-radius: 5px;
+}
+
+a:hover {
+    background-color: #333;
+}

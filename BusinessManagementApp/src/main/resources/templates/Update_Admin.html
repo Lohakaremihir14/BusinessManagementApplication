@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+	<meta charset="UTF-8" />
+	<title>Admin : Update</title>
+	<link rel="stylesheet" href="" th:href="@{/css/Update_Admin.css}" />
+</head>
+<body>
+		<a th:href="@{/admin/services}">Back to Services</a>
+	<div class="updateAdmin">
+				<h3 style="color: red;">UPDATE EXISTING ADMIN / PARTNER DETAILS</h3>
+		<form action="" th:action="@{'/updatingAdmin/'+${admin.adminId}}" th:object="${admin}">
+			<b>Admin_Id : </b><input type="hidden" name="adminId" th:value="${admin.adminId}" th:text="${admin.adminId}"/><br />
+			Admin_Name :
+			<input type="text"  name="aName"    th:value="${admin.aName}"/><br />
+			Admin_Number :
+			<input type="tel"  name="aPhoneno" th:value="${admin.aPhoneno}" pattern="[0-9]{10}"/> <br />
+			Admin_Email :
+			<input type="email" name="aEmail" th:value="${admin.aEmail}" /> <br />
+			
+			<button type="submit" onclick="return confirm('Admin Updated Successfully!!!')">Update_Admin</button>
+			
+		</form>
+	</div>
+</body>
+</html>

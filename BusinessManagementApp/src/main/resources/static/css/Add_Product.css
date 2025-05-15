@@ -1,0 +1,92 @@
+/* Global Styles */
+body {
+  background-image: url("../images/addproduct.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  background-position: center;
+  font-family: 'Arial', sans-serif;
+  color: #fff;
+  margin: 0;
+  padding: 20px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Header Styles */
+h3 {
+  color: #2e8b57;
+  font-size: 24px;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+/* Add Products Form Styles */
+.addProducts {
+  background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent background */
+  width: 400px;
+  height: auto;
+  padding: 20px;
+  position: absolute;
+  left: 50%;
+  top: 10%;
+  transform: translateX(-50%);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+  text-align: center;
+}
+
+.addProducts input,
+.addProducts textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 2px solid #2e8b57;
+  background-color: transparent;
+  color: #fff;
+  font-size: 16px;
+  border-radius: 5px;
+}
+
+.addProducts button {
+  color: #fff;
+  background-color: #2e8b57;
+  border: none;
+  padding: 12px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.addProducts button:hover {
+  background-color: #3cb371;
+}
+
+.addProducts textarea {
+  resize: vertical;
+  height: 100px;
+}
+
+/* Link Styles */
+a {
+  position: relative;
+  top: 20px;
+  border: 1px solid #2f4f4f;
+  padding: 12px 20px;
+  background-color: #2f4f4f;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  display: inline-block;
+  text-align: center;
+}
+
+a:hover {
+  background-color: #3cb371;
+}

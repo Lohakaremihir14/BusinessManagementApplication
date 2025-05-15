@@ -1,0 +1,63 @@
+body {
+    background: linear-gradient(to right, #d7e1ec, #f1f1f1);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 40px 20px;
+}
+
+.p1 {
+    background-color: #ffffff;
+    margin: 20px;
+    padding: 20px;
+    width: 250px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    border-radius: 15px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.p1:hover {
+    transform: scale(1.03);
+}
+
+.p1 img {
+    width: 50%;
+    height: 50%;
+    border-radius: 10px;
+}
+
+h4 {
+    margin: 15px 0 10px 0;
+    color: #333;
+}
+
+span {
+    color: darkgreen;
+    font-weight: bold;
+}
+
+#buy {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #006400;
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+    transition: background-color 0.3s ease;
+}
+
+#buy:hover {
+    background-color: #228B22;
+}

@@ -1,0 +1,118 @@
+@charset "ISO-8859-1";
+
+/* Global Styles */
+body {
+  background-image: url("../images/addproduct.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  font-family: 'Arial', sans-serif;
+  color: #fff;
+  margin: 0;
+  padding: 20px;
+}
+
+/* Back Button */
+a {
+  position: relative;
+  top: 20px;
+  border: 1px solid #2f4f4f;
+  padding: 12px 20px;
+  background-color: #2f4f4f;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  display: inline-block;
+  text-align: center;
+}
+
+a:hover {
+  background-color: #3cb371;
+}
+
+/* Form Container */
+.updateProduct {
+  background-color: rgba(0, 0, 0, 0.6);
+  width: 500px;
+  padding: 25px;
+  position: absolute;
+  left: 50%;
+  top: 10%;
+  transform: translateX(-50%);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+/* Heading */
+.updateProduct h3 {
+  color: #2e8b57;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Form Group */
+.form-group {
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.form-group label {
+  flex: 0 0 150px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.form-group input,
+.form-group textarea,
+.form-group span.readonly {
+  flex: 1;
+  padding: 10px;
+  border: 2px solid #2e8b57;
+  border-radius: 5px;
+  background-color: transparent;
+  color: #fff;
+  font-size: 16px;
+}
+
+.form-group span.readonly {
+  display: inline-block;
+  line-height: 1.5;
+}
+
+/* Submit Button */
+button {
+  background-color: #2e8b57;
+  color: #fff;
+  border: none;
+  padding: 12px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+  margin-top: 10px;
+}
+
+button:hover {
+  background-color: #3cb371;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .updateProduct {
+    width: 90%;
+  }
+
+  .form-group {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .form-group label {
+    margin-bottom: 5px;
+  }
+}
