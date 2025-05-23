@@ -19,7 +19,7 @@ The **Business Management Web Application** is a web-based system designed to he
 
 ## 🏗️ Technologies Used  
 - **Frontend:** Thymeleaf (HTML, CSS)  
-- **Backend:** Java, Spring Boot, Spring Security, Spring Data JPA  
+- **Backend:** Java, Spring Boot, Spring Security, Spring Data JPA,Rest APIs.  
 - **Database:** MySQL  
 - **Build Tool:** Maven  
 - **IDE:** Eclipse / IntelliJ IDEA  
