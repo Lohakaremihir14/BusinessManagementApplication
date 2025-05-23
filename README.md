@@ -1,4 +1,3 @@
-```markdown
 # Business Management Web Application
 
 ---
