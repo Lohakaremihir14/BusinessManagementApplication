@@ -123,5 +123,5 @@ Use these to login as Admin and manage the application.
 ---
 
 ## License  
-This project is licensed under the [MIT License](LICENSE).  
+This project is licensed under the [MIT License](LICENSE.txt).  
 ```
